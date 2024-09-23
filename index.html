@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draco by @Ahmad Sheikh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/kube.mn.css" />
+    <link rel="stylesheet" href="css/font-awesme.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/styles.css">
+	  <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="main-nav">
+        <div class="container">
+            <span class="logo">Ahmad</span>
+            <nav id="navbar-1" class="navbar">
+                <ul>
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <p>Hi, I’m Ahmad Sheikh the Software Developer</p>
+            <div class="units-row">
+                <img src="img/Ahmad.jpg" alt="Avatar">
+                <div>
+                    <h1>I live in<br><span id="typed"></span></h1>
+                    <p>
+                        I'm Ahmad Sheikh, a software developer with strong expertise in resolving errors and creating efficient database relationships. I have also built my own software using core PHP.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Work<br>Experiences</h1>
+            <ul class="work-list">
+                <li>2020-2024</li>
+                <li><a href="#">WebPenter llc</a></li>
+                <li>Webdeveloper</li>
+            </ul>
+            <ul class="work-list">
+                <li>2023-2024</li>
+                <li><a href="#">JS</a></li>
+                <li>UI/UX Designer</li>
+            </ul>
+            <ul class="work-list">
+                <li>2023-2024</li>
+                <li><a href="#">APIs</a></li>
+                <li>I have created API JWT authentication and used it in both the web application and mobile application of the shopping-project and Jewellery-website(E-Commerce).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Technical<br>Skills</h1>
+            <ul class="skill-list list-flat">
+                <li>Web Technology</li>
+                <li>HTML / CSS /Bootstrap /SASS / PHP / Javascript/ OOP</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Database</li>
+                <li>MySQL</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Framework</li>
+                <li>Laravel / Reactjs</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote">
+        <div class="container text-centered">
+            <h1>Fight against the ugliness.</h1>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Handcrafted by Ahmad Sheikh</p>
+            <ul class="social list-flat right">
+                <li><a href="#"><i class="fa fa-send"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+			function newTyped() {};
+			$(function() {
+					$("#typed").typed({
+							strings: ["Rahim Yar Khan", "your galaxy", "everywhere"],
+							typeSpeed: 90,
+							backDelay: 700,
+							contentType: "html",
+							loop: true,
+							resetCallback: function() { newTyped() }
+					});
+					$(".reset").click(function() {
+							$("#typed").typed("reset");
+					});
+			});
+
+			// GSAP Animations
+			document.addEventListener('DOMContentLoaded', function() {
+					gsap.from(".logo", { opacity: 0, y: -50, duration: 1, ease: "power2.out" });
+					gsap.from(".navbar ul li", {
+							opacity: 0,
+							y: 20,
+							stagger: 0.1,
+							duration: 1,
+							ease: "power2.out"
+					});
+			});
+	</script>
+</body>
+</html>
